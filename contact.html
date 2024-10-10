@@ -74,7 +74,15 @@
         <div class="contact-text">
           <h3>Nous Contacter</h3>
           <p>Pour toute demande de rendez-vous ou pour des questions !</p>
-          <a href="/produits" class="contact-btn">Envoyer</a>
+          <form href="#">
+            <label for="qanda">Question / Autre</label>
+            <input id="qanda" type="text" required placeholder="Titre De La Demande"  />
+            <label for="cont">Contenu</label>
+            <textarea id="cont" type="text" required rows="8"> </textarea>
+            <label for="mail">Email</label>
+            <input id="mail" type="email" required placeholder="test@exemple.com"/>
+            <button type="submit">Envoyer</button>
+          </form>
         </div>
         <div class="contact-image">
           <img src="assets/img/icons/contact_icon.png" alt="Icon Promotion" />
