@@ -16,10 +16,8 @@ label {
 
 @font-face {
   font-family: "montserratthin";
-  src: url("../fonts/montserrat/montserrat-variablefont_wght-webfont.woff2")
-      format("woff2"),
-    url("../fonts/montserrat/montserrat-variablefont_wght-webfont.woff")
-      format("woff");
+  src: url("../fonts/montserrat/montserrat-variablefont_wght-webfont.woff2") format("woff2"),
+    url("../fonts/montserrat/montserrat-variablefont_wght-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -38,12 +36,10 @@ header {
   align-items: center;
   padding: 5px;
   background: rgb(2, 0, 36);
-  background: linear-gradient(
-    45deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(1, 65, 57, 1) 26%,
-    rgba(0, 197, 99, 1) 100%
-  );
+  background: linear-gradient(45deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(1, 65, 57, 1) 26%,
+      rgba(0, 197, 99, 1) 100%);
   color: #fff;
 }
 
@@ -239,12 +235,10 @@ tbody tr:nth-last-child(odd) {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(
-    45deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(1, 65, 57, 1) 26%,
-    rgba(0, 197, 99, 1) 100%
-  );
+  background: linear-gradient(45deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(1, 65, 57, 1) 26%,
+      rgba(0, 197, 99, 1) 100%);
   padding: 20px;
   border-radius: 12px;
   width: 100%;
@@ -293,12 +287,10 @@ tbody tr:nth-last-child(odd) {
 
 footer {
   background: rgb(2, 0, 36);
-  background: linear-gradient(
-    227deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(1, 65, 57, 1) 26%,
-    rgba(0, 197, 99, 1) 100%
-  );
+  background: linear-gradient(227deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(1, 65, 57, 1) 26%,
+      rgba(0, 197, 99, 1) 100%);
   padding: 20px 0;
   color: #fff;
 }
@@ -467,6 +459,7 @@ textarea {
   border-radius: 10px;
   border-style: hidden;
   border: 1px solid #000;
+  resize: vertical;
 }
 
 .contact-banner form button {
@@ -476,6 +469,7 @@ textarea {
   height: 50px;
   border: 1px solid #000;
   box-shadow: 2px 2px 0 #000;
+  text-transform: uppercase;
   transition: all 0.3s ease;
 }
 
@@ -495,6 +489,135 @@ textarea {
 .contact-image img {
   max-width: 100%;
   height: auto;
+}
+
+.banner-newsletter {
+  background-color: #00c563;
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 4px 4px 0px #000;
+  margin: 40px auto;
+  width: 80%;
+  max-width: 800px;
+}
+
+.banner-newsletter h3 {
+  font-family: "montserratthin";
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.banner-newsletter form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.banner-newsletter input[type="email"] {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid #000;
+  border-radius: 8px;
+  box-shadow: 2px 2px 0px #000;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.banner-newsletter input[type="email"]:focus {
+  border-color: #ff3b5c;
+  box-shadow: 4px 4px 0px #000;
+}
+
+.banner-newsletter button {
+  padding: 15px 30px;
+  background-color: #fff;
+  color: #000;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 1px solid #000;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 4px 4px 0px #000;
+}
+
+.banner-newsletter button:hover {
+  background-color: #e6e6e6;
+  box-shadow: 6px 6px 0px #000;
+}
+
+.banner-sp {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #e9e8e8;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3E%3Cg fill='%239C92AC' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M0 0h4v4H0V0zm4 4h4v4H4V4z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.banner-sp-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.banner-sp-card {
+  width: 300px;
+  background-color: #e9e8e8;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 4px 4px 0px #000;
+  transition: all 0.3s ease;
+}
+
+.banner-sp-card:hover {
+  box-shadow: 6px 6px 0px #000;
+}
+
+.banner-sp-image {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.banner-sp-content {
+  padding: 20px;
+}
+
+.banner-sp-card-title {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.banner-sp-description {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.banner-sp-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff3b5c;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  border: 1px solid #000;
+}
+
+.banner-sp-btn:hover {
+  background-color: #e23451;
+  box-shadow: 4px 4px 0px #000;
 }
 
 @media (max-width: 768px) {
@@ -575,5 +698,32 @@ textarea {
 
   .contact-image {
     display: none;
+  }
+
+  .banner-newsletter {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .banner-newsletter h3 {
+    font-size: 20px;
+  }
+
+  .banner-newsletter button {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .banner-newsletter input[type="email"] {
+    font-size: 14px;
+  }
+
+  .banner-sp-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .banner-sp-card {
+    width: 90%;
   }
 }
