@@ -7,6 +7,7 @@
 h3,
 p,
 a,
+li,
 tr,
 td,
 th,
@@ -73,7 +74,6 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: #fff;
-  font-weight: bold;
   font-size: 16px;
   transition: color 0.3s;
 }
@@ -618,6 +618,83 @@ textarea {
 .banner-sp-btn:hover {
   background-color: #e23451;
   box-shadow: 4px 4px 0px #000;
+}
+
+.apropos-sectionc {
+  padding: 60px 20px;
+}
+
+.apropos-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.apropos-title {
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-family: "montserratthin";
+  color: #013f39;
+}
+
+.apropos-description {
+  font-size: 18px;
+  margin-bottom: 40px;
+  color: #333;
+  margin-bottom: 50px;
+}
+
+.ap-histo-timeline {
+  list-style: none;
+  padding-left: 0;
+}
+
+.ap-histo-item {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.ap-histo-annee {
+  display: inline-block;
+  border: 1px solid #000;
+  box-shadow: 4px 4px 0px #000;
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.ap-histo-description {
+  display: inline-block;
+  font-size: 18px;
+  color: #333;
+}
+
+.apropos-banner {
+  margin-top: 40px;
+}
+
+.apropos-description {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.apropos-list {
+  list-style: none;
+  padding-left: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.apropos-list li {
+  margin-bottom: 60px;
+  padding: 10px;
+  border: 1px solid #000;
+  box-shadow: 0px 4px 0px #000;
 }
 
 @media (max-width: 768px) {
